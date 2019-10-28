@@ -3,11 +3,11 @@ import "./style.css"
 
 function CharacterCard(props){
     return(
-        <div className="card">
+        <div className="card" onClick={()=>props.checkClicked(props.id)} data-id={props.isClicked}>
             <div className="img-container">
                 <img alt={props.name} src={props.image}/>
             </div>
-            <div className="content">
+            {/* <div className="content">
                 <ul>
                     <li>
                         <strong>Name:</strong> {props.name}
@@ -19,7 +19,7 @@ function CharacterCard(props){
                         <strong>Location:</strong> {props.location}
                     </li>
                 </ul>
-            </div>
+            </div> */}
         </div>
     );
 }
