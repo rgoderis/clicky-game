@@ -4,31 +4,48 @@ import Wrapper from "./components/Wrapper"
 import characters from "./characters.json";
 import './App.css';
 
+  // function to reorder characters
+  function shuffleCharacters(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
 class App extends React.Component {
   state = {
-    characters,
+    characters:shuffleCharacters(characters),
     score: 0,
-    highScore: 0
+    highScore: 0,
   }
-  checkClicked = event =>{
+
+  // function to check to see if character is already clicked
+  checkClicked = id =>{
+    // loop over characters array
     this.state.characters.forEach(character=>{
-      if(character.id === event){
+      // grap character that was clicked
+      if(character.id === id){
+        // check to see if character was already clicked
         if(!character.isClicked){
+          // change isClicked to true and increase the score by 1
           character.isClicked = 1
           this.setState({score: this.state.score + 1})
         }
         else {
+          // check to see if new highScore
           if(this.state.score > this.state.highScore){
             this.setState({highScore: this.state.score})
           }
+          // reset score and change isClicked status of all characters to false
           this.setState({score: 0})
-          this.state.characters.forEach(character=>{
-            character.isClicked=0
-          });
+          this.state.characters.forEach(character=>character.isClicked=0);
         }
       } 
-    })
+    });
+    this.setState({ charcters: shuffleCharacters(characters) })
   }
+
 
   render(){
     return(
@@ -39,7 +56,7 @@ class App extends React.Component {
           <CharacterCard
             checkClicked = {this.checkClicked}
             id={character.id}
-            key = {character.key}
+            key = {character.id}
             name ={character.name}
             image={character.image}
             isClicked = {character.isClicked}
