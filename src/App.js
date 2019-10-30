@@ -2,6 +2,8 @@ import React from 'react';
 import CharacterCard from "./components/CharacterCard"
 import Wrapper from "./components/Wrapper"
 import characters from "./characters.json";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import './App.css';
 
   // function to reorder characters
@@ -46,23 +48,28 @@ class App extends React.Component {
     this.setState({ charcters: shuffleCharacters(characters) })
   }
 
-
   render(){
     return(
-      <Wrapper>
-        <div>score: {this.state.score}</div>
-        <div>High Score: {this.state.highScore}</div>
-        {this.state.characters.map(character=>(
-          <CharacterCard
-            checkClicked = {this.checkClicked}
-            id={character.id}
-            key = {character.id}
-            name ={character.name}
-            image={character.image}
-            isClicked = {character.isClicked}
-          />
-        ))}
-      </Wrapper>
+      <div>
+        <Header 
+          score={this.state.score}
+          highScore={this.state.highScore}
+        />
+        <Wrapper>
+          {this.state.characters.map(character=>(
+            <CharacterCard
+              checkClicked = {this.checkClicked}
+              id={character.id}
+              key = {character.id}
+              name ={character.name}
+              image={character.image}
+              isClicked = {character.isClicked}
+            />
+          ))}
+        </Wrapper>
+        {/* <Footer/> */}
+      </div>
+
     )
   }
 }
