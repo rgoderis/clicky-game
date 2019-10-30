@@ -4,6 +4,7 @@ import Wrapper from "./components/Wrapper"
 import characters from "./characters.json";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Display from "./components/Display";
 import './App.css';
 
   // function to reorder characters
@@ -55,6 +56,7 @@ class App extends React.Component {
           score={this.state.score}
           highScore={this.state.highScore}
         />
+        <Display />
         <Wrapper>
           {this.state.characters.map(character=>(
             <CharacterCard

@@ -37,8 +37,8 @@
     },
     {
       "id": 7,
-      "name": "Bugs Bunny",
-      "image": "https://vignette2.wikia.nocookie.net/deathbattlefanon/images/2/2b/Bugs_Bunny.png/revision/latest?cb=20151206010607",
+      "name": "Swat Cats",
+      "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/dfdc7359-6135-4994-bfc8-1f6db87f4051/dd933gg-2347dcef-5f24-4f3e-8367-92d9356e1253.jpg/v1/fill/w_1280,h_810,q_75,strp/the_radical_squadron_by_reggiejworkshop_dd933gg-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODEwIiwicGF0aCI6IlwvZlwvZGZkYzczNTktNjEzNS00OTk0LWJmYzgtMWY2ZGI4N2Y0MDUxXC9kZDkzM2dnLTIzNDdkY2VmLTVmMjQtNGYzZS04MzY3LTkyZDkzNTZlMTI1My5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.2Z_2aU_WqIy8CulAUPMvyul4C8XsUhaoIia1lzf6gWA",
       "isClicked": 0
     },
     {
@@ -61,14 +61,20 @@
     },
     {
       "id": 11,
-      "name": "Captain Planet",
-      "image": "http://vignette2.wikia.nocookie.net/dragon-rap-battles/images/b/b6/Captain_Planet.png/revision/latest?cb=20160911200836",
+      "name": "Daria",
+      "image": "https://pmctvline2.files.wordpress.com/2018/06/dara-reboot.jpg?w=620",
       "isClicked": 0
     },
     {
       "id": 12,
       "name": "Ickis",
       "image": "http://static.tvtropes.org/pmwiki/pub/images/ickis.png",
+      "isClicked": 0
+    },
+    {
+      "id": 13,
+      "name": "Darkwing Duck",
+      "image": "https://s24195.pcdn.co/wp-content/uploads/2016/08/Screen-Shot-2016-08-17-at-8.00.58-AM-1024x687-1.png",
       "isClicked": 0
     }
   ]
